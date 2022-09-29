@@ -3,6 +3,7 @@ package javaTPC;
 public class TPC04 {
 	public static void main(String[] args) {
 		//4. 데이터 이동(변수 VS 배열)
+		//개별적인 변수 사용 - 데이터 이동에 어려움이 있음
 		int a, b, c;
 		a = 10;
 		b = 20;
@@ -16,6 +17,7 @@ public class TPC04 {
 		arr[1] = b;
 		arr[2] = c;
 		
+		//배열을 이용 - 데이터 이동에 쉬움 
 		//arr 배열을 hap1 메소드로 넘기기 
 		hap1(arr); 
 		
@@ -33,7 +35,7 @@ public class TPC04 {
 		//배열이니 반복문을 활용하여 로직처리
 		//1. int sum = x[0] + x[1] + x[2];
 		
-		//2. 
+		//2. 반복문활용
 		int sum = 0; 
 		for(int i = 0; i < x.length; i++) {
 			sum += x[i];
