@@ -1,6 +1,6 @@
 package javaTPC;
 
-public class TCP07 {
+public class TPC07 {
 
 	public static void main(String[] args) {
 		//메서드 매개변수 전달기법
