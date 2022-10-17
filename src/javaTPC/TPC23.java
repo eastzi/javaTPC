@@ -19,8 +19,10 @@ public class TPC23 {
 	// -> 1개의 display로 만들자! -> 매개변수를 부모타입으로 받아라
 	private static void display(Animal ani) {//animal이 한번은 dog타입, 한번은 cat타입을 받음
 		
-		//2. dog를 타입으로 받게되는데 밑에 night() 메서드에서 문제가 생김. 
-		// -> dog클레스에는 night() method가 없음 -> 오류발생 -> cat타입인 경우에만 메서드를 받도로 if문으로 조건걸기
+		/*2. dog와 cat클래스에 구현된 eat( ) 메소드의 내용이 출력되는데 dog를 타입으로 받을 때 night() 메소드가
+		존재하지 않으므로 오류가 발생함. 때문에 if로 조건을 걸어줌. 
+	    -> dog클레스에는 night() method가 없음 -> 오류발생 -> cat타입인 경우에만 메서드를 받도로 if문으로 조건걸기
+		*/
 		ani.eat(); 
 		
 		//3. cat타입인 경우에만 가능. 조건걸기 
